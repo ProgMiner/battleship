@@ -1,0 +1,14 @@
+
+.LoginPage-Panel {
+    width: 666px;
+    padding: 10px 33px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background: white;
+}
+
+.LoginPage-PanelTitle {
+    margin-bottom: 22px;
+    text-align: center;
+    font-size: 24px;
+}

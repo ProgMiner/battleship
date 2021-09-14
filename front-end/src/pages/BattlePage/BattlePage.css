@@ -1,0 +1,117 @@
+
+.BattlePage-Layout .GlobalLayout-Content {
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.BattlePage-Loading {
+    font-size: 22px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.BattlePage-BattleFields {
+    min-width: 67%;
+    width: 67%;
+}
+
+.BattlePage-BattleFieldContainer {
+    flex-grow: 1;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.BattlePage-BattleFieldContainer + .BattlePage-BattleFieldContainer {
+    margin-top: 40px;
+}
+
+.BattlePage-EnemyField {
+    margin-bottom: 40px;
+}
+
+.BattlePage-MyField {
+    margin-bottom: 50px;
+}
+
+.BattlePage-PlayerInfo {
+    width: 350px;
+}
+
+.BattlePage-RightPart {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.BattlePage-RightPartTop {
+    font-size: 14px;
+    font-weight: bolder;
+
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 100%;
+}
+
+.BattlePage-RightPartBottom {
+    padding-top: 5px;
+    position: absolute;
+    top: 100%;
+}
+
+.BattlePage-Error {
+    font-size: 14px;
+    font-weight: bolder;
+    color: red;
+    max-width: 320px;
+    text-align: center;
+}
+
+.BattlePage-ConfirmButton {
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 18px;
+    background: black;
+    color: white;
+}
+
+.BattlePage-StepsHistory {
+    height: 420px;
+    width: 320px;
+    border: 2px solid black;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.BattlePage-Step {
+    min-height: 30px;
+    font-size: 15px;
+    padding: 5px 6px 6px;
+    word-break: break-all;
+}
+
+.BattlePage-Step + .BattlePage-Step {
+    border-top: 1px solid gray;
+}
+
+.BattlePage-Step_shot {
+    color: white;
+    background: black;
+}
+
+.BattlePage-Step_meta {
+    text-align: center;
+    font-weight: bold;
+}
+
+.BattlePage-CurrentTurn {
+    width: 320px;
+    text-align: center;
+}

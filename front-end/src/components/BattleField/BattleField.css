@@ -1,0 +1,58 @@
+
+.BattleField {
+    display: flex;
+    flex-direction: column;
+}
+
+.BattleField-Row {
+    display: flex;
+}
+
+.BattleField-Cell {
+    width: 35px;
+    height: 35px;
+    border: solid black 1px;
+    padding: 0;
+    position: relative;
+
+    background: white;
+}
+
+.BattleField-Cell_type_MISS::before, .BattleField-Cell_type_MISS::after,
+.BattleField-Cell_type_SHOT::before, .BattleField-Cell_type_SHOT::after {
+    content: '';
+
+    width: 48px;
+    height: 1px;
+    transform-origin: 0 0;
+
+    position: absolute;
+    left: 0;
+
+    background: black;
+}
+
+.BattleField-Cell_type_MISS::before, .BattleField-Cell_type_SHOT::before {
+    top: -1px;
+
+    transform: rotate(45deg);
+}
+
+.BattleField-Cell_type_MISS::after, .BattleField-Cell_type_SHOT::after {
+    bottom: -1px;
+
+    transform: rotate(-45deg);
+}
+
+.BattleField-Cell_type_SHIP, .BattleField-Cell_type_SHOT {
+    background: black;
+}
+
+.BattleField-Cell_type_SHOT::before, .BattleField-Cell_type_SHOT::after {
+    background: white;
+}
+
+.BattleField-Cell_active {
+    cursor: pointer;
+}
+

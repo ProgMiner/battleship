@@ -1,0 +1,156 @@
+.ChatPage-Layout {
+    max-height: 100vh;
+}
+
+.ChatPage-Layout .GlobalLayout-Content {
+    min-height: 300px;
+}
+
+.ChatPage-Chat {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin: 50px 50px;
+
+    font-size: 17px;
+    flex-grow: 1;
+}
+
+.ChatPage-Messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 0;
+    padding: 20px;
+
+    position: relative;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.ChatPage-Messages_loading {
+    align-items: center;
+    justify-content: center;
+}
+
+.ChatPage-Loading {
+    font-size: 22px;
+}
+
+.ChatPage-MessageContainer {
+    display: flex;
+    align-items: flex-start;
+    max-width: 50%;
+    min-height: 0;
+    margin: 15px 0;
+    flex-shrink: 0;
+}
+
+.ChatPage-MessageContainer_mine {
+    align-self: flex-end;
+}
+
+.ChatPage-MessageIcon {
+    width: 45px;
+    height: 45px;
+    margin-right: 12px;
+    border: none;
+    padding: 0;
+
+    background: url('./account.svg') 0 0 / 45px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.ChatPage-MessageContainer_mine .ChatPage-MessageIcon {
+    display: none;
+}
+
+.ChatPage-Message {
+    justify-content: left;
+}
+
+.ChatPage-MessageAuthor {
+    padding: 0;
+}
+
+.ChatPage-MessageContainer_mine .ChatPage-MessageAuthor {
+    display: none;
+}
+
+.ChatPage-MessageContent {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 0 8px 8px 8px;
+    padding: 6px;
+    word-break: break-all;
+}
+
+.ChatPage-MessageContainer_mine .ChatPage-MessageContent {
+    border-radius: 8px 0 8px 8px;
+    background: black;
+    color: white;
+}
+
+.ChatPage-MessageForm {
+    display: flex;
+    height: 55px;
+    min-height: 55px;
+    border: 2px solid black;
+}
+
+.ChatPage-MessageFormInput {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    min-height: 0;
+    border: none;
+    border-right: 2px solid black;
+
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    resize: none;
+    flex-grow: 1;
+}
+
+.ChatPage-MessageFormButton {
+    display: inline-block;
+    width: 70px;
+    border: none;
+    padding: 0;
+
+    background: url('./airplane.svg') 50% 55% / 40px no-repeat;
+    cursor: pointer;
+}
+
+.ChatPage-MessageFormButton:hover {
+    background-position-y: 45%;
+}
+
+.ChatPage-MessageFormButton:active {
+    background-position-y: 65%;
+}
+
+.ChatPage-PlayerMenu {
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.ChatPage-PlayerMenuButton {
+    padding: 7px;
+    font-size: 17px;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.ChatPage-PlayerMenuButton:hover {
+    color: white;
+    background: black;
+}

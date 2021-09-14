@@ -1,0 +1,54 @@
+
+.RegisterForm-Input {
+    display: block;
+    width: 600px;
+    height: 38px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+
+    background: white;
+    font-size: 24px;
+}
+
+.RegisterForm-Input_error {
+    border-color: red;
+}
+
+.RegisterForm-Input + .RegisterForm-Input {
+    margin-top: 22px;
+}
+
+.RegisterForm-SubmitError {
+    height: 55px;
+    line-height: 55px;
+
+    text-align: center;
+    font-size: 16px;
+    color: red;
+}
+
+.RegisterForm-SubmitError_success {
+    color: green;
+}
+
+.RegisterForm button {
+    display: block;
+    width: 600px;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 30px;
+
+    background: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.RegisterForm button + button {
+    margin-top: 10px;
+}
+
+button.RegisterForm-RegisterButton {
+    background: black;
+    color: white;
+}

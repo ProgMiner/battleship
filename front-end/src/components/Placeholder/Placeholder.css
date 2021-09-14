@@ -1,0 +1,9 @@
+
+.Placeholder {
+    display: inline-block;
+    border-radius: 3px;
+    background: lightgray;
+    color: transparent;
+    user-select: none;
+    cursor: text;
+}

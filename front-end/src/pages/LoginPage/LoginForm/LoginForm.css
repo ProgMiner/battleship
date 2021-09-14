@@ -1,0 +1,50 @@
+
+.LoginForm-Input {
+    display: block;
+    width: 600px;
+    height: 38px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+
+    background: white;
+    font-size: 24px;
+}
+
+.LoginForm-Input_error {
+    border-color: red;
+}
+
+.LoginForm-Input + .LoginForm-Input {
+    margin-top: 22px;
+}
+
+.LoginForm-SubmitError {
+    height: 55px;
+    line-height: 55px;
+
+    text-align: center;
+    font-size: 16px;
+    color: red;
+}
+
+.LoginForm button {
+    display: block;
+    width: 600px;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 30px;
+
+    background: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.LoginForm button + button {
+    margin-top: 10px;
+}
+
+button.LoginForm-LoginButton {
+    background: black;
+    color: white;
+}
