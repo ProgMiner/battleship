@@ -32,7 +32,7 @@ export const GlobalLayout: React.FC<GlobalLayoutProps> = ({
                 <div>Марской бой</div>
 
                 <div>
-                    <div>&copy; Гневанов Андрей</div>
+                    <div>автор идеи и дизайна — Гневанов Андрей</div>
                     <div className={cnGlobalLayout('FooterYear')}>2021</div>
                 </div>
             </footer>
