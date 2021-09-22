@@ -26,7 +26,7 @@ public class MessageService {
     }
 
     public Message addMessage(Message message) {
-        if (message.getContent().isBlank()) {
+        if (message.getContent().trim().isEmpty()) {
             throw new IllegalArgumentException("message cannot be blank");
         }
 

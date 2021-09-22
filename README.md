@@ -1,9 +1,10 @@
 # marskoy boy
-2021 ITMO web-programming course work
+
+Battleship game
 
 ## Requirements
-- PostgreSQL 13+
-- Java 11+
+- MySQL
+- Java 8+
 - Maven
 - Yarn
 
