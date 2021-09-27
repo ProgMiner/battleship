@@ -95,7 +95,7 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ className }) => {
                     </div>
 
                     <button type="submit" className={cnRegisterForm('RegisterButton')}>
-                        зарегестрироваться
+                        зарегистрироваться
                     </button>
 
                     <button type="button" onClick={onLoginButtonClick}>

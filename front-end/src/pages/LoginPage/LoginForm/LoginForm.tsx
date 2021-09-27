@@ -68,7 +68,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({ className }) => {
                     </button>
 
                     <button type="button" onClick={onRegisterButtonClick}>
-                        зарегестрироваться
+                        зарегистрироваться
                     </button>
                 </form>
             )}
