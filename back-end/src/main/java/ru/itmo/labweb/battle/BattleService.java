@@ -88,8 +88,6 @@ public class BattleService {
         return battle;
     }
 
-    //TODO fix filling killed ship cells by crosses
-
     public Battle shotCell(int x, int y, String username) {
         checkPassedCoords(x, y);
 
