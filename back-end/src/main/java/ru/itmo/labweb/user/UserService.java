@@ -24,7 +24,11 @@ public class UserService implements UserDetailsService {
     private final BCryptPasswordEncoder passwordEncoder;
     private final SimpMessagingTemplate messagingTemplate;
 
-    public UserService(UserRepository repository, BCryptPasswordEncoder passwordEncoder, SimpMessagingTemplate messagingTemplate) {
+    public UserService(
+            UserRepository repository,
+            BCryptPasswordEncoder passwordEncoder,
+            SimpMessagingTemplate messagingTemplate
+    ) {
         this.repository = repository;
         this.passwordEncoder = passwordEncoder;
         this.messagingTemplate = messagingTemplate;
@@ -76,7 +80,7 @@ public class UserService implements UserDetailsService {
     }
 
     private static long scoreFun(long winner, long looser) {
-        return Math.max(SCORE_MIN, Math.min(SCORE_BASE + scoreDeviationFun(looser - winner), looser));
+        return Math.max(SCORE_MIN, SCORE_BASE + scoreDeviationFun(looser - winner));
     }
 
     private static long scoreDeviationFun(long diff) {

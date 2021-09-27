@@ -88,8 +88,6 @@ public class BattleService {
         return battle;
     }
 
-    //TODO fix filling killed ship cells by crosses
-
     public Battle shotCell(int x, int y, String username) {
         checkPassedCoords(x, y);
 
@@ -99,6 +97,11 @@ public class BattleService {
         assertTurnOrder(battle, username);
 
         Battle.CellState currentCellState = battle.getEnemyField(username).getCellState(x, y);
+
+        if (currentCellState == Battle.CellState.SHOT) {
+            return battle;
+        }
+
         Battle.CellState newCellState = currentCellState == Battle.CellState.SHIP
                 ? Battle.CellState.SHOT : Battle.CellState.MISS;
 
