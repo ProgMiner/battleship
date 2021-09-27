@@ -5,6 +5,7 @@
     min-height: 0;
     margin: 40px 0;
     flex-grow: 1;
+    overflow-x: auto;
 }
 
 .RatingPage-Players_loading {
@@ -21,7 +22,7 @@
 .RatingPage-PlayersList {
     display: flex;
     width: 100%;
-    min-width: 640px;
+    min-width: 950px;
     height: 48px;
     min-height: 0;
     font-size: 24px;
@@ -61,6 +62,7 @@
     padding: 0 20px;
     align-items: center;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 .RatingPage-PlayersListPosition {
@@ -93,6 +95,6 @@
 }
 
 .RatingPage-PlayersListLoses {
-    min-width: 200px;
+    min-width: 250px;
     width: 17%;
 }

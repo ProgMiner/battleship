@@ -69,3 +69,14 @@
 .Header-Tab_active {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+@media (max-width: 425px) {
+    .Header-Title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .Header-Player {
+        font-size: 18px;
+    }
+}

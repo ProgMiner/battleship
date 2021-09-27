@@ -3,17 +3,19 @@
     align-items: center;
     flex-direction: row;
     padding-bottom: 50px;
+    overflow-x: auto;
 }
 
 .BattlePage-Loading {
+    margin: 0 15px;
     font-size: 22px;
     text-align: center;
     flex-grow: 1;
 }
 
 .BattlePage-BattleFields {
-    min-width: 67%;
     width: 67%;
+    min-width: max(67%, 686px);
 }
 
 .BattlePage-BattleFieldContainer {
@@ -40,14 +42,16 @@
 
 .BattlePage-PlayerInfo {
     width: 350px;
+    padding: 0 10px;
 }
 
 .BattlePage-RightPart {
     display: flex;
-    flex-grow: 1;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    min-width: 338px;
     position: relative;
+    flex-grow: 1;
 }
 
 .BattlePage-RightPartTop {

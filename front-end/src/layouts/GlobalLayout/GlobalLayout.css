@@ -33,8 +33,15 @@
     background: black;
     color: white;
     font-size: 12px;
+    white-space: nowrap;
 }
 
 .GlobalLayout-FooterYear {
     text-align: right;
+}
+
+@media (max-width: 375px) {
+    .GlobalLayout-FooterQualifier {
+        display: none;
+    }
 }

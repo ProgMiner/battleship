@@ -10,8 +10,9 @@
     display: flex;
     flex-direction: column;
     min-height: 0;
-    margin: 50px 50px;
+    margin: 0 0;
 
+    position: relative;
     font-size: 17px;
     flex-grow: 1;
 }
@@ -40,7 +41,6 @@
 .ChatPage-MessageContainer {
     display: flex;
     align-items: flex-start;
-    max-width: 50%;
     min-height: 0;
     margin: 15px 0;
     flex-shrink: 0;
@@ -140,6 +140,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    z-index: 100;
 }
 
 .ChatPage-PlayerMenuButton {
@@ -153,4 +154,14 @@
 .ChatPage-PlayerMenuButton:hover {
     color: white;
     background: black;
+}
+
+@media (min-width: 768px) {
+    .ChatPage-Chat {
+        margin: 50px 50px;
+    }
+
+    .ChatPage-MessageContainer {
+        max-width: 50%;
+    }
 }
